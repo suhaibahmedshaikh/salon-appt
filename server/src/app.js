@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/v1", appRouter);
 
 // api health check route
-app.get("/health", (req, res) => {
+app.get("/healthz", (req, res) => {
   res.send("Api working....");
 });
 
